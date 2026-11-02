@@ -31,6 +31,7 @@ sir <- function(t, y, p) {
 }
 
 incidence <- function(beta, gamma, I0) {
+  beta <- unname(beta); gamma <- unname(gamma); I0 <- unname(I0)
   out <- ode(c(S = N - I0, I = I0), 0:T_len, sir, c(beta = beta, gamma = gamma), method = "lsoda")
   pmax(-diff(out[, "S"]), 1e-9)
 }
