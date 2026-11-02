@@ -55,7 +55,7 @@ Posterior means with 95% credible intervals, from [results/RESULTS.md](results/R
 R 4.5 with deSolve, coda, ggplot2 and patchwork:
 
 ```bash
-Rscript covid_sir.R    # about 15 minutes; writes results/RESULTS.md, results/summary.csv, results/fit.png
+Rscript covid_sir.R    # about 4 minutes on a laptop; writes results/RESULTS.md, results/summary.csv, results/fit.png
 ```
 
 ## Limitations
